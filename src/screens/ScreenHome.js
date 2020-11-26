@@ -5,6 +5,7 @@ import React, {Component} from 'react';
 import {View, Text,FlatList,SectionList,StyleSheet} from 'react-native';
 import MyBtn from '../components/MyBtn';
 import SongItem from '../components/SongItem';
+import ADSwiper from '../components/ADSwiper';
 
 export default class ScreenHome extends Component {
 
@@ -36,11 +37,11 @@ export default class ScreenHome extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <FlatList
-                  data={this.state.data}
-                  renderItem={({item}) => <SongItem itemData={item} style={styles.item}/>}
-        />
-        <MyBtn style={{marginTop:8}} text={'测试用例'} onPress={this._myBtnPress} size={40}/>
+          {/*<FlatList*/}
+          {/*    data={this.state.data}*/}
+          {/*    renderItem={({item}) => <SongItem itemData={item} style={styles.item}/>}*/}
+          {/*/>*/}
+          <MyBtn style={{marginTop:8}} text={'测试用例'} onPress={this._myBtnPress} size={40}/>
       </View>
     );
   }
